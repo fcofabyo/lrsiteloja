@@ -1,0 +1,497 @@
+/* =========================
+   RESET PADRÃO
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY & BASE
+========================= */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f4f6f9;
+}
+
+/* =========================
+   HEADER / NAV
+========================= */
+header {
+  background: linear-gradient(135deg, #003366, #001a33);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff9900;
+}
+
+/* =========================
+   HOME / BANNER
+========================= */
+
+
+.banner {
+  width: 280px;
+  height: 280px;
+}
+
+.banner p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #003366;
+  margin-top: 1rem;
+}
+
+/* =========================
+   SEÇÃO GENÉRICA
+========================= */
+/* Seção Quem Somos */
+#quem-somos {
+  background-color: #f4f8ff;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+#quem-somos .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#quem-somos h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #0a1a3f;
+  margin-bottom: 20px;
+}
+
+#quem-somos p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+section {
+  padding: 3rem 2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: #003366;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ff9900;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* =========================
+   SERVIÇOS
+========================= */
+.servicos-lista {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.servico {
+  background: white;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+  flex: 1 1 280px;
+  max-width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servico:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.servico h3 {
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 0.8rem;
+}
+
+/* =========================
+   PRODUTOS
+========================= */
+#produtos {
+  background: #fff;
+}
+
+.produtos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 2rem;
+}
+
+.produto {
+  background-color: white;
+  padding: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 30%;
+  max-width: 330px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.produto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.produto h3 {
+  font-size: 1.3rem;
+  margin: 12px 0;
+  color: #003366;
+}
+
+.produto p {
+  color: #444;
+  font-size: 1rem;
+}
+
+/* =========================
+   EMPRESAS
+========================= */
+#empresas {
+  padding: 3rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.empresa-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px 40px;
+  margin-top: 2rem;
+}
+
+.empresa {
+  max-width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.empresa img {
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+.empresa:hover img {
+  transform: scale(1.25);
+}
+
+.empresa p {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+#localizacao {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+#localizacao h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+#localizacao p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.mapa-container {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   CONTATO
+========================= */
+#contato {
+  background: linear-gradient(135deg, #003366, #001a33);
+  color: white;
+  padding: 3rem 2rem 6rem;
+}
+
+#contato h2 {
+  color: white;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+#whatsapp-link {
+  background-color: #25d366;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#whatsapp-link:hover {
+  background-color: #128C7E;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: #001a33;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: -50px;
+}
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======== SEÇÃO HOME ======== */
+#home {
+  position: relative;
+  background-image: url("../imagens/fachada.jpg"); /* fachada da loja */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* efeito sutil de paralaxe */
+  text-align: center;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+/* ===== RODAPÉ ===== */
+#footer {
+  background-color: #022b44;
+  color: #fff;
+  padding: 60px 20px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 300px;
+  min-width: 250px;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+.footer-col h3 {
+  color: #e00000;
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  font-size: 1rem;
+  color: #d0d0d0;
+  line-height: 1.6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #e00000;
+}
+
+.social a {
+  display: inline-block;
+  color: #fff;
+  background-color: #e00000;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 18px;
+  margin-right: 10px;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background-color: #ff3333;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+@media (max-width: 900px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .produto {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .produto {
+    width: 90%;
+  }
+
+  .empresa-container {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+
+  }
+}
