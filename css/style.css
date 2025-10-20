@@ -370,27 +370,7 @@ footer {
   overflow: hidden;
 }
 
-#home {
-  position: relative;
-  background-image: url("../imagens/logoloro.png"); /* fachada da loja */
-  background-size: cover;           /* faz preencher todo o espaço */
-  background-position: center center; /* centraliza em todas as telas */
-  background-repeat: no-repeat;
-  background-attachment: scroll;    /* evita bugs em celulares */
-  text-align: center;
-  padding: 120px 0;
-  overflow: hidden;
-  min-height: 100vh;                /* ocupa toda a altura da tela */
-}
 
-/* Ajustes específicos para telas menores */
-@media (max-width: 768px) {
-  #home {
-    padding: 80px 0;                /* menos padding em telas pequenas */
-    background-size: contain;       /* mostra a imagem inteira sem cortar */
-    background-position: top center;/* foca na parte mais importante */
-  }
-}
 
 /* ===== RODAPÉ ===== */
 #footer {
