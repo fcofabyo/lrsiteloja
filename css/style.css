@@ -343,11 +343,14 @@ h2::after {
 /* =========================
    MONTADORAS - LOGOS ALINHADAS
 ========================= */
+/* =========================
+   MONTADORAS - LOGOS ALINHADAS
+========================= */
 #montadoras {
   text-align: center;
   padding: 80px 20px;
   background: #fff;
-  overflow: hidden; /* evita barra lateral no celular */
+  overflow: hidden;
 }
 
 #montadoras h2 {
@@ -364,7 +367,7 @@ h2::after {
 /* GRADE DAS LOGOS */
 .montadoras-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* automático e responsivo */
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 40px 60px;
   align-items: center;
   justify-items: center;
@@ -394,13 +397,25 @@ h2::after {
   .montadoras-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    justify-content: center;
+    justify-items: center;
   }
 }
 
 @media (max-width: 600px) {
   .montadoras-container {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+
+  .montadora {
+    flex: 0 0 45%; /* força duas por linha */
+    display: flex;
+    justify-content: center;
   }
 
   .montadora img {
@@ -408,6 +423,7 @@ h2::after {
     padding: 10px;
   }
 }
+
 
 
 
