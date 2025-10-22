@@ -285,20 +285,28 @@ h2::after {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center; /* 🔹 Garante alinhamento vertical */
   gap: 50px 40px;
   margin-top: 2rem;
 }
 
 .empresa {
-  max-width: 180px;
+  width: 180px; /* 🔹 Usa largura fixa para alinhar todas */
+  height: 120px; /* 🔹 Mantém uma área padrão para centralizar as logos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   transition: transform 0.3s ease;
 }
 
+
 .empresa img {
   width: 100%;
-  height: 90px;
-  object-fit: contain;
+  max-width: 150px; /* 🔹 Limita o tamanho sem distorcer */
+  height: 80px;
+  object-fit: contain; /* 🔹 Mantém proporção */
   margin-bottom: 12px;
   transition: transform 0.3s ease;
 }
