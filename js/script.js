@@ -59,5 +59,5 @@ Problema: ${problema}`;
 
   // Abre o WhatsApp em nova aba
   window.open(linkWhatsapp, '_blank');
-});
+}); 
 
